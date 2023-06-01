@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objelerle Calismak</title>
+    <style>
+        th,
+        td {
+          border: 1px solid black;
+          padding: 8px;
+        }
+        table {
+          border-collapse: separate;
+          width: 100%;
+        }
+        th {
+          background-color: cornflowerblue;
+          color: white;
+        }
+        tr:nth-child(even) {
+          background-color: #dedddd;
+        }
+        tr:hover {
+          background-color: #13edb3;
+        }
+      </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>ad</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    <script>
+        /**
+         * JSON Object
+         */
+
+         var musteri = {
+            id : 1,
+            ad: 'Muhammet',
+            adres: 'Kars',
+            telefon: '0 555 666 6688',
+            isactive: true,
+            ailebireyleri:['Anne','Baba','Kiz Cocuk','Dede','Babaanne']
+         };
+
+         console.log(musteri);
+         console.log('Musterinin adi...: ',musteri.ad);
+         console.log('Aile 2.bireyi..: ',musteri.ailebireyleri[2]);
+         /**
+          * JSON Array
+          */
+         var mlist = [{
+            id:1,
+            ad:'Ayse'
+        },{
+            id:34,
+            ad:'Tekin'
+        },{
+            id:45,
+            ad:'Bahar'
+        }];
+        console.log(mlist);
+        console.log('2.Musterinin adi...: ',mlist[1].ad);
+        var tbody = document.getElementById('tbody');
+        tbody.innerHTML = '';
+        mlist.map((data)=>
+            tbody.innerHTML += `
+            <tr>
+             <td>${data.id}</td>   
+             <td>${data.ad}</td>   
+            </tr>
+            `
+        );
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-container {
+  background-color: rgba(245, 132, 3, 0.911);
+  padding: 20px;
+  height: 100px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.icon{
+  float: left;
+  margin-top: 25px;
+}
+.header-headtext {
+  margin-top: 25px;
+  
+}
+.header-button {
+  margin-right: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  text-align: center;
+}
+.header-button a {
+  background-color: rgb(224, 230, 222);
+  padding: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: rgb(243, 8, 8);
+  border-radius: 15px;
+  border-color: black;
+  border-style: inset;
+}
+

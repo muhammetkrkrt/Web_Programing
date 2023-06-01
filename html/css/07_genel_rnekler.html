@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genel Ornekler</title>
+
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+            margin: 5px;
+            display: inline-block;
+        }
+        input[type="text"]{
+            display: block;
+            margin: 5px;
+            width: 90%;
+            padding:12px 12px 12px 12px;
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus{
+            background-color:rgb(17, 182, 25) ;
+        }
+        input[type="submit"]{
+            background-color: blue;
+            display: block;
+            margin: 5px;
+            width: 90%;
+            padding:12px 12px 12px 12px;
+            box-sizing: border-box;
+            color: black;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background-color: rgb(230, 64, 97);
+            color: azure;
+        }
+        li {
+            margin: 3px;
+            list-style: none;
+        }
+
+        ul li:first-child{
+            color: red;
+        }
+        ul li:nth-of-type(even){
+            border: 1px solid blue;
+        }
+        ul li:nth-of-type(odd){
+            border: 2px solid green;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1.sira</li>
+        <li>2.sira</li>
+        <li>3.sira</li>
+        <li>4.sira</li>
+        <li>5.sira</li>
+    </ul>
+    <br><br>
+    <input type="text" name="ad" id="ad">
+    <input type="text" name="ad" id="soyad">
+    <input type="submit" value="Kaydet">
+    <br>
+    <div class="box">Div-1</div>
+    <div class="box">Div-2</div>
+    <div class="box">Div-3</div>
+    <div class="box">Div-4</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dizilerin Kullanimi</title>
+  </head>
+  <body>
+    <script>
+      var marka = ["BMW", "AUDI", "MERCEDES", "TOYOTA", "VOLVO", "OPEL"];
+      var model = new Array("320", "A8", "E200", "Rav4", "XC90", "Mokka");
+      console.log(marka);
+      console.log(model);
+      model.push("A3"); //dizinin sonuna ekleme yapar
+      console.log(model);
+      model.unshift("CX40"); // dizinin basina ekleme yapar
+      console.log(model);
+      model.pop(); // son elemani siler. Stack-LIFO
+      console.log(model);
+      model.shift(); // dizinin ilk elemanini siler
+      console.log(model);
+      console.log("320 nin index nosu-> " + model.indexOf("320"));
+      model.sort();  // Siralama yapar ve nesneye uygular..
+      console.log(model);
+      model.reverse(); //Diziyi ters cevirme islemi yapar..
+      console.log(model);
+      model.splice(1,4); //[1,4] 1 ve 4 dahil olmak uzere diziden cikartir..
+      console.log(model);
+      </script>
+  </body>
+</html>
